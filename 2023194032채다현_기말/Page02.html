@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8">
+
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto Sans KR:wght@400&display=swap">
+  	
+  	<style>
+		.main {
+			position: relative;
+			width: 100%;
+			height: 4000px;
+			overflow: hidden;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: space-between;
+			text-align: left;
+			font-size: 19px;
+		}
+		.container {
+			width: 1200px;
+			position: relative;
+			height: 3736px;
+			overflow: hidden;
+			flex-shrink: 0;
+		}
+		.menu_list {
+			width: 609px;
+			height: 90px;
+			left: 397px;
+			position: relative;
+			top: 0;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+		.container_list {
+			width: 81px;
+			height: 90px;
+			top: 0;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.container_list:hover{
+			border-bottom: solid 2px #000000;
+		}
+
+		a {
+			font-family: 'Noto Sans KR';
+			font-weight: 300;
+			color: #333333;
+			font-size: 19px;
+			text-align: center;
+			letter-spacing: -1px;
+			line-height: 90px;
+			white-space: nowrap;
+			text-decoration: none;
+		}
+
+		.header {
+			position: relative;
+			width: 1200px;
+			background-color: #ffffff;
+		}
+
+		.icon_main_1 {
+			position: absolute;
+			width: 31px;
+			height: 31px;
+			top: 30px;
+			left: 1119px;
+			background-image: url(https://cdn3.iconfinder.com/data/icons/feather-5/24/search-512.png);
+			background-size: cover;
+			border-radius: 15.5px;
+		}
+
+		.icon_main_2 {
+			position: absolute;
+			width: 31px;
+			height: 31px;
+			top: 30px;
+			left: 1160px;
+			background-image: url(https://cdn-icons-png.flaticon.com/512/1144/1144760.png);
+			background-size: cover;
+			border-radius: 15.5px;
+		}
+
+		.div1 {
+			position: absolute;
+			top: -2px;
+			left: 2px;
+			letter-spacing: -1px;
+			line-height: 90px;
+			display: flex;
+			align-items: center;
+			width: 143px;
+			height: 59px;
+		}
+		.child {
+			position: absolute;
+			top: 22px;
+			left: 133px;
+			width: 23.5px;
+			height: 12.5px;
+			object-fit: contain;
+		}
+		.div {
+			position: absolute;
+			top: 347px;
+			left: 0px;
+			width: 162px;
+			height: 210px;
+			overflow: hidden;
+		}
+		.div3 {
+			position: absolute;
+			top: 65px;
+			left: 2px;
+			letter-spacing: -1px;
+			line-height: 20px;
+			display: flex;
+			align-items: center;
+			width: 100px;
+			height: 25px;
+		}
+		.div4 {
+			position: absolute;
+			top: 98px;
+			left: 2px;
+			letter-spacing: -1px;
+			line-height: 20px;
+			display: flex;
+			align-items: center;
+			width: 100px;
+			height: 25px;
+		}
+		.div5 {
+			position: absolute;
+			top: 131px;
+			left: 2px;
+			letter-spacing: -1px;
+			line-height: 20px;
+			display: flex;
+			align-items: center;
+			width: 100px;
+			height: 25px;
+			-webkit-text-stroke: 1px #000;
+		}
+		.div6 {
+			position: absolute;
+			top: 164px;
+			left: 2px;
+			letter-spacing: -1px;
+			line-height: 20px;
+			display: flex;
+			align-items: center;
+			width: 100px;
+			height: 25px;
+		}
+		.div7 {
+			position: absolute;
+			top: -2px;
+			left: 2px;
+			font-size: 24px;
+			letter-spacing: -1px;
+			line-height: 90px;
+			display: flex;
+			align-items: center;
+			width: 143px;
+			height: 59px;
+		}
+		.item {
+			position: absolute;
+			top: 137px;
+			left: 85px;
+			border-radius: 50%;
+			background-color: #000;
+			width: 12px;
+			height: 12px;
+		}
+		.div2 {
+			position: absolute;
+			top: 66px;
+			left: 0px;
+			width: 162px;
+			height: 210px;
+			overflow: hidden;
+			font-size: 20px;
+		}
+		.index-child {
+			position: absolute;
+			top: 88px;
+			left: 133px;
+			width: 23.5px;
+			height: 12.5px;
+			object-fit: contain;
+		}
+		.index-item {
+			position: absolute;
+			top: 113.5px;
+			left: 1.5px;
+			border-top: 1px solid #000;
+			box-sizing: border-box;
+			width: 161px;
+			height: 1px;
+		}
+		.index-inner {
+			position: absolute;
+			top: 401.5px;
+			left: 1.5px;
+			border-top: 1px solid #000;
+			box-sizing: border-box;
+			width: 161px;
+			height: 1px;
+		}
+		.index {
+			position: absolute;
+			top: 471px;
+			left: 0px;
+			border-radius: 31px;
+			width: 250px;
+			height: 904px;
+			overflow: hidden;
+			font-size: 24px;
+		}
+		.letter_img {
+			position: absolute;
+			top: 553px;
+			left: 909px;
+			width: 24px;
+			height: 24px;
+			overflow: hidden;
+		}
+		.b {
+			position: absolute;
+			top: 80px;
+			left: 54px;
+			font-size: 36px;
+			letter-spacing: -1px;
+			line-height: 90px;
+			display: flex;
+			color: #000;
+			align-items: center;
+			width: 279px;
+			height: 40px;
+		}
+		.h_1 {
+			position: absolute;
+			top: 135px;
+			left: 54px;
+			letter-spacing: -1px;
+			line-height: 30px;
+			color: #1ee491;
+			display: flex;
+			align-items: center;
+			width: 350px;
+			height: 21px;
+		}
+		.h_2 {
+			position: absolute;
+			top: 337px;
+			left: 525px;
+			letter-spacing: -1px;
+			line-height: 30px;
+			font-weight: 600;
+			display: flex;
+			align-items: center;
+			width: 472px;
+			height: 21px;
+		}
+		.h_3 {
+			position: absolute;
+			top: 694px;
+			left: 55px;
+			letter-spacing: -1px;
+			line-height: 30px;
+			font-weight: 600;
+			display: flex;
+			align-items: center;
+			width: 387px;
+			height: 21px;
+		}
+		.z {
+			position: absolute;
+			top: 403px;
+			left: 525px;
+			letter-spacing: -1px;
+			line-height: 30px;
+			display: inline-block;
+			width: 425px;
+			height: 151px;
+		}
+		.z1 {
+			position: absolute;
+			top: 742px;
+			left: 55px;
+			letter-spacing: -1px;
+			line-height: 30px;
+			display: inline-block;
+			width: 407px;
+			height: 151px;
+		}
+		.z2 {
+			position: absolute;
+			top: 93px;
+			left: 500px;
+			letter-spacing: -1px;
+			line-height: 30px;
+			display: inline-block;
+			width: 425px;
+			height: 151px;
+		}
+		.z3 {
+			position: absolute;
+			top: 262px;
+			left: 500px;
+			letter-spacing: -1px;
+			line-height: 30px;
+			display: inline-block;
+			width: 425px;
+			height: 151px;
+		}
+		.image-icon {
+			position: absolute;
+			width: calc(100% + 0.1px);
+			top: 0px;
+			right: -0.1px;
+			left: 0px;
+			border-radius: 15px;
+			max-width: 100%;
+			overflow: hidden;
+			height: 350px;
+			object-fit: cover;
+		}
+		.image {
+			width: 100%;
+			top: 0px;
+			right: -0.1px;
+			left: 0px;
+			border-radius: 15px;
+			opacity: 0.1;
+		}
+		.image img{height: 350px;}
+		.image:hover{opacity: 0.9; transition: .1s;}
+
+		.sub_1 {
+			position: absolute;
+			top: 41px;
+			left: 23px;
+			font-weight: 500;
+			display: flex;
+			align-items: center;
+			width: 75px;
+			height: 20px;
+		}
+		.p {
+			margin-block-start: 0;
+			margin-block-end: 6px;
+		}
+		.p2 {
+			margin: 0;
+		}
+		.txt {
+			width: 100%;
+		}
+		.text_box {
+			line-height: 15px;
+			font-weight: 600;
+			display: flex;
+			align-items: center;
+		}
+		.headinfo {
+			position: absolute;
+			width: calc(100% - 45.9px);
+			top: 234px;
+			right: 22.9px;
+			left: 23px;
+			height: 75px;
+			overflow: hidden;
+			font-size: 10px;
+			color: #000;
+		}
+		.article {
+			position: absolute;
+			width: calc(100% - 600px);
+			top: 183px;
+			right: 546.1px;
+			left: 54px;
+			border-radius: 10px;
+			border: 1px solid #000;
+			box-sizing: border-box;
+			height: 350px;
+			overflow: hidden;
+			font-size: 16px;
+			color: #1ee491;
+		}
+		.image_size {
+			position: absolute;
+			overflow: hidden;
+			object-fit: cover;
+			max-width: 100%;
+		}
+		.image_size2 {
+			position: absolute;
+			width: 100%;
+			border-radius: 0px 100px 15px 15px;
+			max-width: 100%;
+			overflow: hidden;
+			height: 436px;
+			object-fit: cover;
+		}
+		.image1 {
+			position: absolute;
+			width: 100%;
+			top: 0px;
+			right: 0px;
+			left: 0px;
+			border-radius: 15px;
+			background-color: #f4f4f4;
+			height: 114px;
+			display: none;
+		}
+		.image2 {
+			position: absolute;
+			width: 100%;
+			top: 0px;
+			right: 0px;
+			left: 0px;
+			border-radius: 15px;
+			background-color: #f4f4f4;
+			height: 199px;
+		}
+		.image3 {
+			position: absolute;
+			width: 100%;
+			top: 0px;
+			right: 0px;
+			left: 0px;
+			border-radius: 0px 100px 15px 15px;
+			background-color: #f4f4f4;
+			height: 436px;
+		}
+		.article1 {
+			position: absolute;
+			width: calc(100% - 522px);
+			top: 183px;
+			right: 0px;
+			left: 522px;
+			border-radius: 42px;
+			height: 114px;
+			overflow: hidden;
+		}
+		.article2 {
+			position: absolute;
+			width: calc(100% - 522px);
+			top: 694px;
+			right: 0px;
+			left: 522px;
+			border-radius: 42px;
+			height: 199px;
+			overflow: hidden;
+		}
+		.article3 {
+			position: absolute;
+			width: calc(100% - 543px);
+			top: 83px;
+			right: 488px;
+			left: 55px;
+			border-radius: 42px;
+			height: 436px;
+			overflow: hidden;
+		}
+		.container-child {
+			position: absolute;
+			top: 82.5px;
+			left: calc(50% - 13.5px);
+			border-right: 1px solid #000;
+			box-sizing: border-box;
+			width: 1px;
+			height: 561px;
+		}
+		.div13 {
+			position: absolute;
+			top: 32px;
+			left: calc(50% - 249px);
+			letter-spacing: -1px;
+			line-height: 30px;
+			font-weight: 600;
+			text-align: center;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 472px;
+			height: 21px;
+		}
+		.letter_img1 {
+			position: absolute;
+			top: 431px;
+			left: 909px;
+			width: 24px;
+			height: 24px;
+			overflow: hidden;
+		}
+		.parent {
+			position: absolute;
+			top: 998px;
+			left: 0px;
+			width: 950px;
+			height: 523px;
+			overflow: hidden;
+		}
+		.div14 {
+			position: absolute;
+			top: 1580px;
+			left: calc(50% - 433px);
+			letter-spacing: -1px;
+			line-height: 30px;
+			font-weight: 600;
+			color: #000;
+			display: flex;
+			align-items: center;
+			width: 472px;
+			height: 21px;
+		}
+		.container1 {
+			position: absolute;
+			top: 515px;
+			left: 250px;
+			width: 950px;
+			height: 1895px;
+			overflow: hidden;
+			color: #424242;
+		}
+		.container2 {
+			position: absolute;
+			top: 0px;
+			left: calc(50% - 600px);
+			width: 1200px;
+			height: 90px;
+		}
+		.container3 {
+			position: absolute;
+			top: 53px;
+			left: calc(50% - 600px);
+			width: 1200px;
+			height: 309.5px;
+			overflow: hidden;
+		}
+		.container4 {
+			position: absolute;
+			top: 363px;
+			left: calc(50% - 600px);
+			width: 1200px;
+			height: 309.5px;
+			overflow: hidden;
+		}
+		.container5 {
+			position: absolute;
+			top: 673px;
+			left: calc(50% - 600px);
+			width: 1200px;
+			height: 309.5px;
+			overflow: hidden;
+		}
+		.title_box {
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			background-color: #1ee491;
+			width: 1200px;
+			height: 300px;
+		}
+		.p_header {
+			position: absolute;
+			top: 110px;
+			left: 412px;
+			letter-spacing: -1px;
+			line-height: 90px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 377px;
+			height: 59px;
+		}
+		.p_subheader {
+			position: absolute;
+			top: 169px;
+			left: 364px;
+			font-size: 19px;
+			letter-spacing: -1px;
+			line-height: 90px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 472px;
+			height: 21px;
+		}
+		.title {
+			position: absolute;
+			top: 171px;
+			left: 0px;
+			width: 1200px;
+			height: 300px;
+			overflow: hidden;
+			text-align: center;
+			font-size: 36px;
+			background-color: #1ee491;
+		}
+		.div18 {
+			position: absolute;
+			top: 0px;
+			left: calc(50% - 33.5px);
+			letter-spacing: -1px;
+			line-height: 90px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 68px;
+			height: 90px;
+		}
+		.div17 {
+			position: absolute;
+			width: calc(100% - 627px);
+			top: 0px;
+			right: 24px;
+			left: 603px;
+			height: 90px;
+		}
+		.div19 {
+			position: absolute;
+			width: calc(100% - 627px);
+			top: 0px;
+			right: 126px;
+			left: 501px;
+			border-bottom: 1px solid #000;
+			box-sizing: border-box;
+			height: 90px;
+		}
+		.div21 {
+			position: absolute;
+			width: calc(100% - 627px);
+			top: 0px;
+			right: 227px;
+			left: 400px;
+			height: 90px;
+		}
+		.link {
+			position: absolute;
+			width: calc(100% - 627px);
+			top: 0px;
+			right: 329px;
+			left: 298px;
+			height: 90px;
+		}
+		.div25 {
+			position: absolute;
+			top: 0px;
+			left: calc(50% - 34px);
+			letter-spacing: -1px;
+			line-height: 90px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 68px;
+			height: 90px;
+		}
+		.div24 {
+			position: absolute;
+			width: calc(100% - 626px);
+			top: 0px;
+			right: 430px;
+			left: 196px;
+			height: 90px;
+		}
+		.div26 {
+			position: absolute;
+			width: calc(100% - 627px);
+			top: 0px;
+			right: 532px;
+			left: 95px;
+			height: 90px;
+		}
+		.list {
+			position: absolute;
+			width: calc(100% - 492px);
+			top: 0px;
+			right: 180px;
+			left: 312px;
+			height: 90px;
+		}
+		.div28 {
+			position: absolute;
+			top: 30px;
+			left: 1119px;
+			border-radius: 50%;
+			background-color: #d9d9d9;
+			width: 31px;
+			height: 31px;
+		}
+		.div29 {
+			position: absolute;
+			top: 30px;
+			left: 1159.74px;
+			border-radius: 50%;
+			background-color: #d9d9d9;
+			width: 31px;
+			height: 31px;
+		}
+		.logo {
+			position: absolute;
+			top: 10px;
+			left: 32px;
+			background-image: url(https://i.ibb.co/sCsHWcJ/gogogogo.png);
+			background-size: cover;
+			background-position: center;
+			width: 150px;
+			height: 80px;
+		}
+
+		.infotextt {
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			font-size: 28px;
+			font-weight: 600;
+			color: #000;
+			display: flex;
+			align-items: center;
+			width: 477.5px;
+			height: 53px;
+		}
+		.info_title {
+			position: relative;
+			top: 26px;
+			left: 21px;
+			font-weight: 500;
+			display: flex;
+			align-items: center;
+			width: 60px;
+			height: 16px;
+			white-space : nowrap; 
+		}
+		.info {
+			position: relative;
+			width: calc(100% - 42px);
+			top: 180px;
+			right: 21px;
+			left: 21px;
+			height: 60px;
+			overflow: hidden;
+			font-size: 10px;
+			color: #000;
+		}
+		.infoitem {
+			width: 285px;
+			top: 25px;
+			right: 1009px;
+			left: 94px;
+			border-radius: 15px;
+			background-color: #f5f5f5;
+			box-sizing: border-box;
+			height: 275px;
+			overflow: hidden;
+		}
+
+		.infolist {
+			position: absolute;
+			top:37px;
+			width: 1200px;
+			height: 286px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+
+		.morelogo {
+			position: absolute;
+			top: 12px;
+			left: 1112px;
+			width: 30px;
+			height: 30px;
+			object-fit: contain;
+		}
+		.list1 {
+			position: absolute;
+			top: 2692px;
+			left: 0px;
+			width: 1200px;
+			height: 983px;
+			overflow: hidden;
+			font-size: 16px;
+			color: #1ee491;
+		}
+		.photo_list {
+			position: absolute;
+			left: 35px;
+			width: 972px;
+			height: 215px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+		.photo_box {
+			width: 228px;
+			right: 744px;
+			border-radius: 15px;
+			background-size: cover;
+			box-sizing: border-box;
+			height: 215px;
+			overflow: hidden;
+			opacity: 0.7;
+		}
+		.photo_box:hover{opacity: 1.0;transition: .1s;}
+		.button_box {
+			position: absolute;
+			top: 82px;
+			right: 218px;
+			border-radius: 25px;
+			box-sizing: border-box;
+			width: 50px;
+			height: 50px;
+		}
+		.button_box img{width: 100%;}
+		.photo {
+			position: absolute;
+			top: 2143px;
+			left: 250px;
+			width: 1012px;
+			height: 309.5px;
+			overflow: hidden;
+		}
+
+		.site-name {
+			position: absolute;
+			top: 52px;
+			left: 80px;
+			font-size: 24px;
+			line-height: 150%;
+			color: #000;
+		}
+		.buttons-icon {
+			width: 30px;
+			position: relative;
+			border-radius: 4px;
+			height: 30px;
+			object-fit: cover;
+			margin-right: 20px;
+		}
+		.social-icons {
+			position: absolute;
+			top: 176px;
+			left: 80px;
+			display: flex;
+			flex-direction: row;
+			align-items: flex-start;
+			justify-content: flex-start;
+			gap: 8px;
+		}
+		.navigation-footer {
+			width: 1920px;
+			position: relative;
+			background-color: #d9d9d9;
+			height: 264px;
+			overflow: hidden;
+			flex-shrink: 0;
+			font-size: 16px;
+			color: #454545;
+			font-family: Inter;
+		}
+
+
+    </style>
+  	
+</head>
+<body>
+  	
+  	<div class="main">
+    		<div class="container">
+      			<div class="index">
+        				<div class="div">
+          					<div class="div1">카테고리</div>
+        				</div>
+        				<div class="div2">
+          					<div class="div3">상세</div>
+          					<div class="div4">상세</div>
+          					<div class="div5">상세</div>
+          					<div class="div6">상세</div>
+          					<div class="div7">연도별</div>
+        				</div>
+				
+      			</div>
+      			<div class="container1">
+        				<img class="letter_img"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROsDe-Y8b05CmvLAt3rKR9wKzBWzhLm012Jg&s">
+        				
+        				<b class="b">나만의-성</b>
+        				<div class="h_1">경북의성</div>
+        				<div class="h_2">우리 꿈의 이야기</div>
+        				<div class="h_3">마을이 소개하는 마을 지역</div>
+        				<div class="z">로컬에서의 삶을 꿈꾸는 Z세대 청년들을 위해, 치열한 도전을 통해 ‘할 일’을 만들 수 있는 배움 실험실이 되고 싶어요. 의성의 다양한 레퍼런스를 경험하며 내가 ‘하고 싶은 일’과 ‘살아가고 싶은 삶’에 대해 함께 고민하고 만들어가는 ‘도전 공동체’를 이루고자 합니다.</div>
+        				<div class="z1">로컬에서의 삶을 꿈꾸는 Z세대 청년들을 위해, 치열한 도전을 통해 ‘할 일’을 만들 수 있는 배움 실험실이 되고 싶어요. 의성의 다양한 레퍼런스를 경험하며 내가 ‘하고 싶은 일’과 ‘살아가고 싶은 삶’에 대해 함께 고민하고 만들어가는 ‘도전 공동체’를 이루고자 합니다.</div>
+        				<div class="article">
+          					<div class="image">
+								<img src="https://image.localro.co.kr/85897d15-a39c-4233-a576-9c3e7713ee82_%E1%84%83%E1%85%A1%E1%84%8B%E1%85%AE%E1%86%AB%E1%84%85%E1%85%A9%E1%84%83%E1%85%B3.jpeg">
+          					</div>
+          					<div class="sub_1">청년마을</div>
+          					<div class="headinfo">
+            						<div class="text_box">
+              							<span class="txt">
+                								<p class="p">주소 경기도 시흥시 배곧로 27-8</p>
+                								<p class="p">문의 010 0000 0000</p>
+                								<p class="p2">대표자 홍길동</p>
+              							</span>
+            						</div>
+          					</div>
+        				</div>
+        				<div class="article1">
+          					<img class="image_size"  src="https://image.localro.co.kr/2dac0fd5-0de8-41fd-83a7-4877d77c2504_DSC09977.jpg">
+          					
+          					<div class="image1">
+          					</div>
+        				</div>
+        				<div class="article2">
+          					<div class="image2">
+          					</div>
+          					<img class="image_size"  src="https://image.localro.co.kr/62502c89-7ac1-4985-b086-1827c775247d_SE-1a8e0667-26d4-4ada-bb34-8ce49a6c53c6.jpg">
+          					
+        				</div>
+        				<div class="container-child">
+        				</div>
+        				<div class="parent">
+          					<div class="div13">마을 청년 이야기</div>
+          					<div class="article3">
+            						<div class="image3">
+            						</div>
+            						<img class="image_size2"  src="https://image.localro.co.kr/57cc3dad-38db-49a4-85ed-a59bd9a129be_3.%E1%84%8F%E1%85%B5%E1%84%8B%E1%85%AF%E1%84%83%E1%85%B3_%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5_%E1%84%8B%E1%85%B4%E1%84%89%E1%85%A5%E1%86%BC.png">
+            						
+          					</div>
+          					<div class="z2">로컬에서의 삶을 꿈꾸는 Z세대 청년들을 위해, 치열한 도전을 통해 ‘할 일’을 만들 수 있는 배움 실험실이 되고 싶어요. 의성의 다양한 레퍼런스를 경험하며 내가 ‘하고 싶은 일’과 ‘살아가고 싶은 삶’에 대해 함께 고민하고 만들어가는 ‘도전 공동체’를 이루고자 합니다.</div>
+          					<div class="z3">로컬에서의 삶을 꿈꾸는 Z세대 청년들을 위해, 치열한 도전을 통해 ‘할 일’을 만들 수 있는 배움 실험실이 되고 싶어요. 의성의 다양한 레퍼런스를 경험하며 내가 ‘하고 싶은 일’과 ‘살아가고 싶은 삶’에 대해 함께 고민하고 만들어가는 ‘도전 공동체’를 이루고자 합니다.</div>
+          					<img class="letter_img1"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROsDe-Y8b05CmvLAt3rKR9wKzBWzhLm012Jg&s">
+          					
+        				</div>
+        				<div class="div14">마을 갤러리</div>
+      			</div>
+      			<div class="title">
+        				<div class="p_header">청년마을</div>
+        				<div class="p_subheader">모두가 함께 만들어가는 우리의 공간입니다.</div>
+      			</div>
+				  <div class="header">
+                    <a href="Page01.html"><div class="logo"></div></a>
+                    <div class="menu_list">
+                        <div class="container_list"><a href=Page01.html>홈</a></div>
+                        <div class="container_list"><a href=Page01.html>소개</a></div>
+                        <div class="container_list"><a href=Page03.html>지역</a></div>
+                        <div class="container_list"><a href=Page03.html>여행</a></div>
+                        <div class="container_list"><a href=Page02.html>청년마을</a></div>
+                        <div class="container_list"><a href=Page02.html>커뮤니티</a></div>
+                    </div>
+                    <div class="icon_main_1"></div>
+                    <div class="icon_main_2"></div>
+                </div>
+				  <div class="photo">
+					<div class="photo_list">
+						  <div class="photo_box"
+						  style="background-image: url(https://image.localro.co.kr/a6f13ce9-b387-4e08-9361-0e67a829acac_DSC09877.jpg);">
+						  </div>
+						  <div class="photo_box"
+						  style="background-image: url(https://image.localro.co.kr/a5ffe8e3-b91b-4460-bb74-ca4d2b73e054_DSC09860.jpg);">
+						  </div>
+						  <div class="photo_box"
+						  style="background-image: url(https://image.localro.co.kr/109d5f27-6135-43fa-8bd5-4f5db8e3d5fd_DSC00306.jpg);">
+						  </div>
+						  <div class="photo_box"
+						  style="background-image: url(https://image.localro.co.kr/1905a834-d065-4618-95c8-621f6b6a477e_%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202024-05-05%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%2012.46.56.png);">
+						  </div>
+					</div>
+					<div class="button_box">
+						  <img src="https://cdn4.iconfinder.com/data/icons/round-circle/100/circle-36-512.png">
+						  
+					</div>
+			  </div>
+      			<div class="list1">
+        				<div class="infotextt">전체보기</div>
+        				<div class="container3">
+          					<div class="infolist">
+            						<div class="infoitem">
+              							<div class="info_title">청년마을</div>
+              							<div class="info">
+                								<div class="text_box">
+                  									<span class="txt">
+                    										<p class="p">주소 경기도 시흥시 배곧로 27-8</p>
+                    										<p class="p">문의 010 0000 0000</p>
+                    										<p class="p2">대표자 홍길동</p>
+                  									</span>
+                								</div>
+              							</div>
+            						</div>
+            						<div class="infoitem">
+              							<div class="info_title">청년마을</div>
+              							<div class="info">
+                								<div class="text_box">
+                  									<span class="txt">
+                    										<p class="p">주소 경기도 시흥시 배곧로 27-8</p>
+                    										<p class="p">문의 010 0000 0000</p>
+                    										<p class="p2">대표자 홍길동</p>
+                  									</span>
+                								</div>
+              							</div>
+            						</div>
+            						<div class="infoitem">
+              							<div class="info_title">청년마을</div>
+              							<div class="info">
+                								<div class="text_box">
+                  									<span class="txt">
+                    										<p class="p">주소 경기도 시흥시 배곧로 27-8</p>
+                    										<p class="p">문의 010 0000 0000</p>
+                    										<p class="p2">대표자 홍길동</p>
+                  									</span>
+                								</div>
+              							</div>
+            						</div>
+            						<div class="infoitem">
+              							<div class="info_title">청년마을</div>
+              							<div class="info">
+                								<div class="text_box">
+                  									<span class="txt">
+                    										<p class="p">주소 경기도 시흥시 배곧로 27-8</p>
+                    										<p class="p">문의 010 0000 0000</p>
+                    										<p class="p2">대표자 홍길동</p>
+                  									</span>
+                								</div>
+              							</div>
+            						</div>
+          					</div>
+        				</div>
+        				<div class="container4">
+							<div class="infolist">
+								<div class="infoitem">
+									  <div class="info_title">청년마을</div>
+									  <div class="info">
+											<div class="text_box">
+												  <span class="txt">
+														<p class="p">주소 경기도 시흥시 배곧로 27-8</p>
+														<p class="p">문의 010 0000 0000</p>
+														<p class="p2">대표자 홍길동</p>
+												  </span>
+											</div>
+									  </div>
+								</div>
+								<div class="infoitem">
+									  <div class="info_title">청년마을</div>
+									  <div class="info">
+											<div class="text_box">
+												  <span class="txt">
+														<p class="p">주소 경기도 시흥시 배곧로 27-8</p>
+														<p class="p">문의 010 0000 0000</p>
+														<p class="p2">대표자 홍길동</p>
+												  </span>
+											</div>
+									  </div>
+								</div>
+								<div class="infoitem">
+									  <div class="info_title">청년마을</div>
+									  <div class="info">
+											<div class="text_box">
+												  <span class="txt">
+														<p class="p">주소 경기도 시흥시 배곧로 27-8</p>
+														<p class="p">문의 010 0000 0000</p>
+														<p class="p2">대표자 홍길동</p>
+												  </span>
+											</div>
+									  </div>
+								</div>
+								<div class="infoitem">
+									  <div class="info_title">청년마을</div>
+									  <div class="info">
+											<div class="text_box">
+												  <span class="txt">
+														<p class="p">주소 경기도 시흥시 배곧로 27-8</p>
+														<p class="p">문의 010 0000 0000</p>
+														<p class="p2">대표자 홍길동</p>
+												  </span>
+											</div>
+									  </div>
+								</div>
+						  </div>
+        				</div>
+        				<div class="container5">
+							<div class="infolist">
+								<div class="infoitem">
+									  <div class="info_title">청년마을</div>
+									  <div class="info">
+											<div class="text_box">
+												  <span class="txt">
+														<p class="p">주소 경기도 시흥시 배곧로 27-8</p>
+														<p class="p">문의 010 0000 0000</p>
+														<p class="p2">대표자 홍길동</p>
+												  </span>
+											</div>
+									  </div>
+								</div>
+								<div class="infoitem">
+									  <div class="info_title">청년마을</div>
+									  <div class="info">
+											<div class="text_box">
+												  <span class="txt">
+														<p class="p">주소 경기도 시흥시 배곧로 27-8</p>
+														<p class="p">문의 010 0000 0000</p>
+														<p class="p2">대표자 홍길동</p>
+												  </span>
+											</div>
+									  </div>
+								</div>
+								<div class="infoitem">
+									  <div class="info_title">청년마을</div>
+									  <div class="info">
+											<div class="text_box">
+												  <span class="txt">
+														<p class="p">주소 경기도 시흥시 배곧로 27-8</p>
+														<p class="p">문의 010 0000 0000</p>
+														<p class="p2">대표자 홍길동</p>
+												  </span>
+											</div>
+									  </div>
+								</div>
+								<div class="infoitem">
+									  <div class="info_title">청년마을</div>
+									  <div class="info">
+											<div class="text_box">
+												  <span class="txt">
+														<p class="p">주소 경기도 시흥시 배곧로 27-8</p>
+														<p class="p">문의 010 0000 0000</p>
+														<p class="p2">대표자 홍길동</p>
+												  </span>
+											</div>
+									  </div>
+								</div>
+						  </div>
+        				</div>
+        				<img class="morelogo"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROsDe-Y8b05CmvLAt3rKR9wKzBWzhLm012Jg&s">
+        				
+      			</div>
+    		</div>
+    		<div class="navigation-footer">
+      			<div class="site-name">로컬로가</div>
+      			<div class="social-icons">
+					<a href="Page01.html"><img class="buttons-icon" alt="none" src="https://lordicon.com/icons/system/regular/41-home.svg"></a>
+					<a href="Page01.html"><img class="buttons-icon" alt="none" src="https://cdn-icons-png.freepik.com/512/58/58894.png"></a>
+        				
+      			</div>
+    		</div>
+  	</div>
+  	
+  	
+  	
+  	
+</body>
+</html>

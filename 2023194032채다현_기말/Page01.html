@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto Sans KR:wght@400&display=swap">
+
+<style>
+    *{box-sizing: border-box; margin: 0;padding: 0;}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0; 
+}
+
+
+.main{
+    overflow: hidden;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    position: relative;
+    width: 1200px;
+    height: 3500px;
+    overflow: hidden;
+}
+
+.menu_list {
+    width: 609px;
+    height: 90px;
+    left: 397px;
+    position: relative;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container_list {
+    width: 81px;
+    height: 90px;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container_list:hover{
+    border-bottom: solid 2px #000000;
+}
+
+
+a {
+    font-family: 'Noto Sans KR';
+    font-weight: 300;
+    color: #333333;
+    font-size: 19px;
+    text-align: center;
+    letter-spacing: -1px;
+    line-height: 90px;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.top {
+    position: absolute;
+    width: 1200px;
+    height: 592px;
+    top: 0;
+    left: 360px;
+}
+
+.view {
+    position: absolute;
+    width: 1920px;
+    height: 592px;
+}
+
+.topposition {
+    position: relative;
+    width: 1958px;
+    height: 592px;
+    left: -360px;
+}
+
+.frame {
+    position: relative;
+    width: 100%;
+    height: 342px;
+    top: 90px;
+    left: 360px;
+    background-color: #1ee490;
+}
+
+.maingraphic {
+    position: absolute;
+    width: 1920px;
+    height: 592px;
+    top: 0;
+    left: -360px;
+}
+
+.main_text {
+    position: relative;
+    width: 370px;
+    height: 276px;
+    top: 140px;
+    left: 103px;
+}
+
+.catch_border {
+    position: absolute;
+    width: 166px;
+    height: 22px;
+    top: 0;
+    left: 0;
+    background-color: #424242;
+    border-radius: 12px 15px 15px 0px;
+}
+
+.catchphrase {
+    position: absolute;
+    width: 138px;
+    height: 20px;
+    left: 15px;
+    font-family: 'Noto Sans KR';
+    font-weight: 300;
+    color: #ffffff;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.etc {
+    position: absolute;
+    width: 69px;
+    height: 21px;
+    top: 132px;
+    left: 0;
+}
+
+.etc_text {
+    font-family: 'Noto Sans KR';
+    font-weight: 300;
+    color: #000000;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.line {
+    position: absolute;
+    width: 75px;
+    height: 1px;
+    top: 20px;
+    left: 0;
+    background-color: #b2b2b2;
+}
+
+.num_text {
+    position: absolute;
+    top: 460px;
+    left: 622px;
+    font-family: 'Noto Sans KR';
+    font-weight: 900;
+    color: #000000;
+    font-size: 16px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.line_2 {
+    position: absolute;
+    width: 150px;
+    height: 2px;
+    top: 471px;
+    left: 462px;
+    background-color: #b2b2b2;
+}
+
+.img_box {
+    position: absolute;
+    width: 500px;
+    height: 400px;
+    top: 117px;
+    left: 1458px;
+}
+
+.main_img {
+    position: absolute;
+    width: 500px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.header {
+    position: relative;
+    width: 1200px;
+    background-color: #ffffff;
+}
+
+.icon_main_1 {
+    position: absolute;
+    width: 31px;
+    height: 31px;
+    top: 30px;
+    left: 1119px;
+    background-image: url(https://cdn3.iconfinder.com/data/icons/feather-5/24/search-512.png);
+	background-size: cover;
+    border-radius: 15.5px;
+}
+
+.icon_main_2 {
+    position: absolute;
+    width: 31px;
+    height: 31px;
+    top: 30px;
+    left: 1160px;
+    background-image: url(https://cdn-icons-png.flaticon.com/512/1144/1144760.png);
+	background-size: cover;
+    border-radius: 15.5px;
+}
+
+.logo {
+  	position: absolute;
+  	top: 10px;
+  	left: 32px;
+  	background-image: url(https://i.ibb.co/sCsHWcJ/gogogogo.png);
+	background-size: cover;
+	background-position: center;
+  	width: 150px;
+  	height: 80px;
+}
+
+.object_1 {
+    position: absolute;
+    width: 100%;
+    height: 385px;
+    top: 778px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.rectframe {
+    flex-basis: 100px;
+    height: 384px;
+    flex-grow: 1;
+    border: 1px solid white;
+}
+
+.rectframe:hover{flex-grow: 2.5; transition: .5s;}
+
+.ob1_p {
+    width: 170px;
+    height: 60px;
+    margin-top: 40px;
+    margin-left: 30px;
+    font-family: 'Noto Sans KR';
+    font-weight: 600;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 30px;
+}
+
+.banner {
+    position: absolute;
+    width: 1920px;
+    height: 250px;
+    top: 1400px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.banner_box {
+    width: 600px;
+    height: 163px;
+    top: 0;
+    left: 360px;
+    background-color: #c3e2ff;
+    overflow: hidden;
+}
+
+.banner_h {
+    margin-top: 40px;
+    margin-left: 102px;
+    font-family: 'Noto Sans KR';
+    font-weight: 600;
+    color: #000000;
+    font-size: 19px;
+    letter-spacing: -1px;
+    line-height: 30px;
+}
+
+.banner_p {
+    margin-left: 102px;
+    font-family: 'Noto Sans KR';
+    font-weight: 600;
+    color: #0d8bff;
+    font-size: 14px;
+    letter-spacing: -1px;
+    line-height: 30px;
+}
+
+.banner_img {
+    position: absolute;
+    margin-left: 400px;
+    margin-top: -110px;
+    width: 190px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.object_2 {
+    position: absolute;
+    width: 1080px;
+    height: 620px;
+    top: 1769px;
+    left: 60px;
+    background-color: #f4f4f4;
+    border-radius: 60px;
+}
+
+.ob_2 {
+    position: relative;
+    width: 972px;
+    height: 100%;
+    left: 54px;
+}
+
+.more_text {
+    position: absolute;
+    top: 135px;
+    left: 900px;
+    font-family: 'Noto Sans KR';
+    font-weight: 600;
+    color: #000000;
+    font-size: 20px;
+    line-height: normal;
+    white-space: nowrap;    
+}
+
+.ob_2_list {
+    position: absolute;
+    width: 960px;
+    height: 310px;
+    top: 214px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.ob_2_box {
+    width: 226px;
+    height: 310px;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+.ob_2_img {
+    height: 170px;
+    object-fit: cover;
+    width: 226px;
+}
+
+.icon_box {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 25px;
+    left: 10px;
+}
+
+.littep {
+    font-family: "Roboto-Medium", Helvetica;
+    font-weight: 500;
+    color: #1ee490;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.bigp {
+    font-family: 'Noto Sans KR';
+    font-weight: 600;
+    color: #333333;
+    font-size: 20px;
+    margin-top: 12px;
+    margin-left: 20px;
+}
+
+.object_3 {
+    position: relative;
+    width: 1080px;
+    height: 831px;
+    top: 2442px;
+    left: 60px;
+    background-color: #f4f4f4;
+    border-radius: 60px;
+}
+
+.container3 {
+    position: relative;
+    width: 970px;
+    height: 831px;
+    left: 54px;
+    background-color: #f5f5f5;
+}
+
+.container3_1 {
+    position: absolute;
+    width: 583px;
+    height: 517px;
+    top: 98px;
+    left: 0;
+}
+
+.container3_2 {
+    position: absolute;
+    width: 630px;
+    height: 460px;
+    top: 98px;
+    left: 0;
+    overflow: hidden;
+}
+
+.container3_3 {
+    position: absolute;
+    width: 233px;
+    height: 48px;
+    top: 98px;
+    left: 0;
+}
+
+.category {
+    font-family: 'Noto Sans KR';
+    font-weight: 600;
+    color: #1ee490;
+    font-size: 16px;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.ltitle_box {
+    margin-top: 10px;
+    width: 233px;
+    height: 24px;
+    top: 35px;
+    left: 0;
+}
+
+.ltitle {
+    font-family: "Roboto-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 18px;
+    line-height: normal;
+}
+
+.p {
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #333333;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 24px;
+    margin-top: -20px;
+}
+
+.paragraph {
+    position: absolute;
+    width: 233px;
+    height: 27px;
+    top: 135px;
+    border-top-width: 2px;
+    border-top-style: solid;
+    border-color: #e7e7e7;
+}
+
+.date_text {
+    position: absolute;
+    width: 72px;
+    height: 16px;
+    top: 10px;
+    left: 0;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #999999;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.link_text {
+    position: absolute;
+    width: 73px;
+    height: 16px;
+    top: 10px;
+    left: 153px;
+    font-family: 'Noto Sans KR';
+    font-weight: 600;
+    color: #000000;
+    font-size: 14px;
+    text-align: right;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.left_group {
+    position: relative;
+    width: 630px;
+    height: 100%;
+    left: -32px;
+}
+
+.hb {
+    position: absolute;
+    font-family: 'Noto Sans KR';
+    font-weight: 600;
+    color: #000000;
+    font-size: 24px;
+    margin-left: 32px;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.left_box {
+    width: 590px;
+    height: 444px;
+    margin-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.item {
+    width: 293px;
+    height: 216px;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+.text_box3 {
+    position: relative;
+    width: 233px;
+    height: 162px;
+    top: 34px;
+    left: 30px;
+}
+
+.card {
+    position: absolute;
+    width: 350px;
+    height: 400px;
+    top: 198px;
+    left: 622px;
+}
+.cardimg {
+    width: 300px;
+    height: 300px;
+    margin-top: 40px;
+    margin-left: 30px;
+}
+
+.card_text {
+    font-family: 'Noto Sans KR';
+    font-weight: 600;
+    color: #000000;
+    font-size: 24px;
+    margin-left: 30px;
+}
+.site-name {
+  	margin-top: 52px;
+  	margin-left: 80px;
+  	font-size: 24px;
+  	line-height: 150%;
+  	color: #000;
+}
+.buttons-icon {
+  	width: 30px;
+  	border-radius: 4px;
+  	height: 30px;
+  	object-fit: cover;
+	margin-right: 20px;
+}
+.social-icons {
+  	margin-top: 80px;
+  	margin-left: 80px;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	gap: 8px;
+}
+.navigation-footer {
+  	width: 1920px;
+  	background-color: #d9d9d9;
+  	height: 264px;
+  	overflow: hidden;
+  	flex-shrink: 0;
+  	font-size: 16px;
+  	color: #454545;
+}
+
+h1 {
+    position: absolute;
+    width: 162px;
+    height: 65px;
+    top: 50px;
+    left: 0;
+    font-family: "Noto Sans KR-Bold", Helvetica;
+    font-weight: 700;
+    color: #3d3d3d;
+    font-size: 28px;
+    letter-spacing: -2.4px;
+    line-height: 32px;
+}
+
+h2{
+    color: #424242;
+    position: absolute;
+    height: 53px;
+    top: 120px;
+    left: 0;
+    font-family: 'Noto Sans KR';
+    font-weight: 600;
+    font-size: 28px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+
+
+</style>
+    </head>
+    <body>
+        <div class="main">
+            <div class="container">
+                <div class="maingraphic">
+                    <div class="top">
+                        <div class="topposition">
+                            <div class="view">
+                                <div class="frame">
+                                    <div class="main_text">
+                                            <div class="catch_border"><div class="catchphrase">우리 동네 히어로</div></div>
+                                                <h1>강릉<br>‘파도살롱’</h1>
+                                            <div class="etc">
+                                                <div class="etc_text">자세히 보기</div>
+                                                <div class="line"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="background"></div>
+                            <div class="line_2"></div>
+                            <div class="num_text">01<span style="font-weight: 400; color:#333333">  / 5</span></div>
+                            <div class="img_box" style="left: 898px"><img class="main_img" src="https://s3.ap-northeast-2.amazonaws.com/img.stibee.com/21010_1651567507.jpg" /></div>
+                            <div class="img_box"><img class="main_img" src="https://image.newsis.com/2020/03/25/NISI20200325_0000500750_web.jpg" /></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header">
+                    <a href="Page01.html"><div class="logo"></div></a>
+                    <div class="menu_list">
+                        <div class="container_list"><a href=Page01.html>홈</a></div>
+                        <div class="container_list"><a href=Page01.html>소개</a></div>
+                        <div class="container_list"><a href=Page03.html>지역</a></div>
+                        <div class="container_list"><a href=Page03.html>여행</a></div>
+                        <div class="container_list"><a href=Page02.html>청년마을</a></div>
+                        <div class="container_list"><a href=Page02.html>커뮤니티</a></div>
+                    </div>
+                    <div class="icon_main_1"></div>
+                    <div class="icon_main_2"></div>
+                </div>
+                <div class="object_1">               
+                    <div class="rectframe" style="background-color: lightgray;">
+                    </div>
+                    <div class="rectframe" style="background-image: url(https://i.ibb.co/99BgzpD/2024-06-15-102717.png); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="rectframe" style="background-color: #1ee4904a;">
+                        <div class="ob1_p">[전남 신안]<br>주섬주섬마을</div>
+                        <div class="ob1_p">바로가기</div>
+                    </div>
+                </div>
+                <div class="banner">
+                    <div class="banner_box">
+                        <div class="banner_h">2024 청년마을<br>페스티벌</div>
+                        <p class="banner_p">2024년 6월 14일 ~ 2024년 6월 15일</p>
+                        <img class="banner_img" src="https://image.localro.co.kr/1700c2e3-ce69-4ddb-ae6b-2f6f4c09665c_%EF%BC%91.png">
+                    </div>
+                    <div class="banner_box" style="background-color: #fdffc3;">
+                        <div class="banner_h">소셜 다이닝<br>고흥의 밥상</div>
+                        <p class="banner_p" style="color: #a3a600;">2024년 6월 24일 ~ 2024년 7월 7일</p>
+                        <img class="banner_img" src="https://image.localro.co.kr/2abd2247-0531-455c-ba2c-e7fdd0742796_001.png">
+                    </div>
+                </div>    
+                <div class="object_2">
+                    <div class="ob_2">
+                        <h2>로로Pick 여기로 떠나!</h2>
+                        <div class="more_text">더보기</div>
+                        <div class="ob_2_list">
+                                    <div class="ob_2_box">
+                                        <img class="ob_2_img" src="https://image.localro.co.kr/ff1f6d48-7879-475c-8126-22451ae28899_1655092964138_4YSG4YWv4Y.jpg">
+                                        <div class="littep">[충북]</div>
+                                        <div class="bigp">[충북 괴산] <br>뭐하농하우스</div>
+                                    </div>
+                                    <div class="ob_2_box">
+                                        <img class="ob_2_img" src="https://image.localro.co.kr/7eb8086c-756e-496a-96ba-f6fcb8aec48e_16611320956011_6302dd3f92c36.png">
+                                        <div class="littep">[전남]</div>
+                                        <div class="bigp">[전남 신안]<br>주섬주섬마을</div>
+                                    </div>
+                                    <div class="ob_2_box">
+                                        <img class="ob_2_img" src="https://image.localro.co.kr/b82baec8-1ffc-4060-a28d-340623fd2f08_16611535901504_6303313624b7f.png">
+                                        <div class="littep">[강원]</div>
+                                        <div class="bigp">[강원 강릉]<br>강릉살자</div>
+                                    </div>
+                                    <div class="ob_2_box">
+                                        <img class="ob_2_img" src="https://image.localro.co.kr/f543592d-77bf-4beb-8ad7-41c0597d5f45_17035726125278_658a748480dbb.jpg">
+                                        <div class="littep">[지역]</div>
+                                        <div class="bigp">[전남 영안]<br>달빛포레스트</div>
+                                    </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="object_3">
+                    <div class="container3">
+                        <h2>지금 우리 동네는?<h2>
+                        <div class="container3_1">
+                            <div class="left_group">
+                                <div class="hb">인기글 | <span style="color:#a3a3a3">최신순</span></div>
+                                <div class="container3_2">
+                                    <div class="left_box">
+                                        <div class="item">
+                                            <div class="text_box3">
+                                                <div class="category">콘텐츠</div>
+                                                <div class="ltitle_box"><div class="ltitle">직접 가꾼 채소로 수제...</div></div>
+                                                <div class="container3_3">
+                                                    <p class="p">신청 바로가기<br />안녕하세요. 의성 텃밭지킴이 당근..</p>
+                                                </div>
+                                                <div class="paragraph">
+                                                    <div class="date_text">2024.05.20</div>
+                                                    <div class="link_text">더보기</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="text_box3">
+                                                <div class="category">행사</div>
+                                                <div class="ltitle_box"><p class="ltitle">꿈을 심는 농부 참여자 모집</p></div>
+                                                <div class="container3_3">
+                                                    <p class="p">신청 바로가기<br />자연을 사랑하는 농부와 일주일 간..</p>
+                                                </div>
+                                                <div class="paragraph">
+                                                    <div class="date_text">2024.05.20</div>
+                                                    <div class="link_text">더보기</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="text_box3">
+                                                <div class="category">기타</div>
+                                                <div class="ltitle_box"><div class="ltitle">먹(食)케이션 : 봄 이야기...</div></div>
+                                                <div class="container3_3">
+                                                    <p class="p">경상남도 함양에서 살아보며 처음 보는 사람들과 새로운 인연을 쌓고..</p>
+                                                </div>
+                                                <div class="paragraph">
+                                                    <div class="date_text">2024.05.20</div>
+                                                    <div class="link_text">더보기</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="text_box3">
+                                                <div class="category">콘텐츠</div>
+                                                <div class="ltitle_box"><div class="ltitle">로컬러닝앱</div></div>
+                                                <div class="container3_3">
+                                                    <p class="p">속초에서 아이디어 시동 걸기. 소호 259와 함께하는 숙박객 대상 관광..</p>
+                                                </div>
+                                                <div class="paragraph">
+                                                    <div class="date_text">2024.05.20</div>
+                                                    <div class="link_text">더보기</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card_text">카드뉴스</div>
+                            <img class="cardimg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlhfr-iXwJ-plVkHt2eee5N_JLE0l-UW1q5g&s">
+                        </div>
+                    </div>
+                </div>      
+            </div>
+            <div class="navigation-footer">
+                <div class="site-name">로컬로가</div>
+                <div class="social-icons">
+                  <a href="Page01.html"><img class="buttons-icon" alt="none" src="https://lordicon.com/icons/system/regular/41-home.svg"></a>
+                  <a href="Page01.html"><img class="buttons-icon" alt="none" src="https://cdn-icons-png.freepik.com/512/58/58894.png"></a>
+                      
+                </div>
+          </div>  
+          </div>  
+    </body>
+</html>
